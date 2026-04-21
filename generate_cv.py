@@ -27,10 +27,10 @@ PROFILE = {
         "I am a PhD candidate in Economics at Université Paris Dauphine - PSL, "
         "in partnership with Amundi Investment Solutions (CIFRE). My doctoral research, co-supervised "
         "by Yannick Le Pen (LEDa-CGEMP) and Thierry Roncalli (Amundi Research Institute), "
-        "investigates allocation biases in Net Zero passive investing "
+        "focuses on allocation biases in Net Zero passive investing "
         "and the integration of physical climate risk in portfolio management.",
 
-        "I hold an MSc in Quantitative Finance from Université Paris Dauphine - PSL "
+        "I hold an MSc in Economic and Financial Engineering (Quantitative Finance) from Université Paris Dauphine - PSL "
         "and a Double BSc in Applied Economics "
         "from Université Paris Dauphine – PSL and Goethe Universität Frankfurt. My academic work "
         "spans sustainable finance, ESG methodologies,  "
@@ -47,7 +47,7 @@ PROFILE = {
 EDUCATION = [
     {
         "degree": "PhD in Economics",
-        "institution": "Université Paris Dauphine – PSL × Amundi Investment Solutions",
+        "institution": "Université Paris Dauphine – PSL",
         "years": "2024 – 2027",
         "details": (
             "Laboratoire d'Economie de Dauphine (LEDa) · "

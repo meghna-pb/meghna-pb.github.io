@@ -363,6 +363,15 @@ def about_paragraphs():
         f'<p class="about-p">{p}</p>' for p in PROFILE["about"]
     )
 
+def encode_email(email):
+    """
+    Encode every character of an email address as an HTML decimal entity.
+    Browsers render it identically; most scrapers and spam bots cannot parse it.
+    Both the href and the visible text are encoded so nothing leaks in plain HTML.
+    """
+    encoded = "".join(f"&#{ord(c)};" for c in email)
+    return f'<a href="&#{ord("m")};ailto:{encoded}" class="sidebar-contact-link">{encoded}</a>'
+
 # ── NAV ITEMS ────────────────────────────────
 NAV_ITEMS = [
     ("about",        "About"),
@@ -406,6 +415,7 @@ def generate_html():
         if PROFILE.get("linkedin") else ""
     )
     social = " &middot; ".join(filter(None, [gh_link, li_link]))
+    email_html = encode_email(PROFILE["email"])
 
     return f"""<!DOCTYPE html>
 <html lang="en" data-theme="light">
@@ -616,10 +626,10 @@ nav {{ margin-top: 4px; }}
   line-height: 2;
   flex-shrink: 0;
 }}
-.sidebar-contact a, .social-link {{
+.sidebar-contact a, .social-link, .sidebar-contact-link {{
   color: #7aaed4; text-decoration: none;
 }}
-.sidebar-contact a:hover, .social-link:hover {{ color: #B5D4F4; }}
+.sidebar-contact a:hover, .social-link:hover, .sidebar-contact-link:hover {{ color: #B5D4F4; }}
 
 /* ══════════════════════════════════════════
    MOBILE TOPBAR
@@ -1013,7 +1023,7 @@ nav {{ margin-top: 4px; }}
   </nav>
   <div class="sidebar-divider"></div>
   <div class="sidebar-contact">
-    <div>✉&nbsp;<a href="mailto:{PROFILE['email']}">{PROFILE['email']}</a></div>
+    <div>✉&nbsp;{email_html}</div>
     <div>⌖&nbsp;{PROFILE['location']}</div>
     {f'<div style="margin-top:4px;">{social}</div>' if social else ''}
   </div>

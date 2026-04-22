@@ -12,7 +12,7 @@ Features: sidebar nav · mobile responsive · light/dark theme · email obfuscat
 
 PROFILE = {
     "name": "Meghna P. Bhaugeerutty",
-    "title": "CIFRE PhD Candidate · Quantitative Researcher",
+    "title": "PhD Candidate · Quantitative Researcher",
     "institution": "Université Paris Dauphine – PSL × Amundi",
     "email": "meghna.bhaugeerutty@dauphine.psl.eu",
     "github": "https://github.com/meghna-pb",
@@ -77,7 +77,7 @@ EDUCATION = [
     {
         "degree": "Double BSc in Applied Economics",
         "institution": "Université Paris Dauphine – PSL & Goethe Universität Frankfurt",
-        "grade": "Good",
+        "grade": "Grade: Good",
         "city": "Paris & Frankfurt",
         "years": "2019 – 2022",
         "text": "Exchange year at Goethe Universität Frankfurt (2021–2022). Minor in Psychology.",
@@ -142,16 +142,16 @@ PUBLICATIONS = [
         "venue": "Working paper",
         "year": "2025",
         "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5958135",
-        "abstract": (
-            "Net Zero passive strategies are designed to decarbonise portfolios by reallocating capital "
-            "away from high-emission sectors and toward greener ones. But how much of this reallocation "
-            "reflects genuine decarbonisation versus mechanical sector or country tilts? "
-            "This paper decomposes the portfolio weight changes induced by leading Net Zero indices "
-            "into a pure decarbonisation component and allocation biases driven by sectoral and "
-            "geographical concentration. We show that a significant share of the observed reallocation "
-            "is attributable to structural biases rather than carbon efficiency, with important "
-            "implications for investor mandates and index design."
-        ),
+        "abstract": None # (
+            # "Net Zero passive strategies are designed to decarbonise portfolios by reallocating capital "
+            # "away from high-emission sectors and toward greener ones. But how much of this reallocation "
+            # "reflects genuine decarbonisation versus mechanical sector or country tilts? "
+            # "This paper decomposes the portfolio weight changes induced by leading Net Zero indices "
+            # "into a pure decarbonisation component and allocation biases driven by sectoral and "
+            # "geographical concentration. We show that a significant share of the observed reallocation "
+            # "is attributable to structural biases rather than carbon efficiency, with important "
+            # "implications for investor mandates and index design."
+        # ),
     },
     {
         "type": "Work in Progress",
@@ -160,14 +160,14 @@ PUBLICATIONS = [
         "venue": "Working paper",
         "year": "2026",
         "url": None,
-        "abstract": (
-            "We propose a Climate Black-Litterman framework that embeds forward-looking physical "
-            "climate risk scenarios — covering flood, heat stress, and sea-level rise — directly "
-            "into the portfolio construction process. By translating climate hazard projections "
-            "into expected return views, the model allows investors to tilt allocations toward "
-            "climate-resilient assets in a theoretically consistent manner, without discarding "
-            "prior market equilibrium information."
-        ),
+        "abstract": None # (
+            # "We propose a Climate Black-Litterman framework that embeds forward-looking physical "
+            # "climate risk scenarios — covering flood, heat stress, and sea-level rise — directly "
+            # "into the portfolio construction process. By translating climate hazard projections "
+            # "into expected return views, the model allows investors to tilt allocations toward "
+            # "climate-resilient assets in a theoretically consistent manner, without discarding "
+            # "prior market equilibrium information."
+        #  ),
     },
     {
         "type": "Work in Progress",
@@ -176,13 +176,13 @@ PUBLICATIONS = [
         "venue": "Working paper",
         "year": "2026",
         "url": None,
-        "abstract": (
-            "This paper investigates how exogenous shocks — including natural disasters and "
-            "geopolitical tensions — propagate through agricultural commodity futures markets. "
-            "Using high-frequency futures data and an event-study approach, we estimate the "
-            "magnitude, persistence, and cross-commodity spillovers of supply disruptions, "
-            "with a focus on staple crops exposed to climate-related tail risks."
-        ),
+        "abstract": None #(
+            # "This paper investigates how exogenous shocks — including natural disasters and "
+            # "geopolitical tensions — propagate through agricultural commodity futures markets. "
+            # "Using high-frequency futures data and an event-study approach, we estimate the "
+            # "magnitude, persistence, and cross-commodity spillovers of supply disruptions, "
+            # "with a focus on staple crops exposed to climate-related tail risks."
+            #  ),
     },
 ]
 
@@ -1081,7 +1081,7 @@ nav {{ margin-top: 4px; }}
 <main id="main">
 
   <section class="section" id="about">
-    <div class="hero-tag">CIFRE PhD &middot; Quantitative Researcher &middot; Sustainable Finance</div>
+    <div class="hero-tag">CIFRE PhD &middot; Quantitative Researcher </div>
     <h1 class="hero-name">{PROFILE['name']}</h1>
     <p class="hero-tagline">{PROFILE['tagline']}</p>
     <div class="section-label">About me</div>

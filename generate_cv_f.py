@@ -41,8 +41,8 @@ PROFILE = {
         "Net Zero commitment dashboard. I also interned at ING Wholesale Banking in Frankfurt, "
         "focusing on sustainable finance transactions and ESG client analysis.",
     ],
-    "cv_url": "cv_052026.pdf",  # Place cv.pdf in your repo root (same folder as index.html)
-    "photo": "photo.jpg",  # Uncomment and set to your photo filename in repo root
+    "cv_url": None, #"cv_052026.pdf",  # Place cv.pdf in your repo root (same folder as index.html)
+    "photo": "photo.JPG",  # Uncomment and set to your photo filename in repo root
 }
 
 EDUCATION = [

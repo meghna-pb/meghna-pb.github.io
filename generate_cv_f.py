@@ -41,8 +41,8 @@ PROFILE = {
         "Net Zero commitment dashboard. I also interned at ING Wholesale Banking in Frankfurt, "
         "focusing on sustainable finance transactions and ESG client analysis.",
     ],
-    "cv_url": "cv.pdf",  # Place cv.pdf in your repo root (same folder as index.html)
-    # "photo": "photo.jpg",  # Uncomment and set to your photo filename in repo root
+    "cv_url": "cv_052026.pdf",  # Place cv.pdf in your repo root (same folder as index.html)
+    "photo": "photo.jpg",  # Uncomment and set to your photo filename in repo root
 }
 
 EDUCATION = [
@@ -1097,7 +1097,7 @@ nav {{ margin-top: 4px; }}
 <main id="main">
 
   <section class="section" id="about">
-    <div class="hero-tag">CIFRE PhD &middot; Quantitative Researcher &middot; Sustainable Finance</div>
+    <div class="hero-tag">CIFRE PhD &middot; Quantitative Researcher</div>
     <h1 class="hero-name">{PROFILE['name']}</h1>
     <p class="hero-tagline">{PROFILE['tagline']}</p>
     <div class="section-label">About me</div>

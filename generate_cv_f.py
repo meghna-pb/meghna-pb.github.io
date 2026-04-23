@@ -51,7 +51,7 @@ EDUCATION = [
         "institution": "Université Paris Dauphine – PSL",
         "grade": None,
         "city": "Paris, France",
-        "years": "2024 – 2027",
+        "years": "2024 – 2027 (Scheduled)",
         "text": (
             "CIFRE partnership with Amundi Investment Solutions. "
             "Laboratoire d'Economie de Dauphine (LEDa-CGEMP)."
@@ -65,7 +65,7 @@ EDUCATION = [
     {
         "degree": "MSc in Economic and Financial Engineering – Quantitative Finance (272)",
         "institution": "Université Paris Dauphine – PSL",
-        "grade": "Mention Bien",
+        "grade": None, #"Mention Bien",
         "city": "Paris, France",
         "years": "2022 – 2024",
         "text": "Specialisation in quantitative methods applied to asset management and derivatives.",
@@ -78,7 +78,7 @@ EDUCATION = [
     {
         "degree": "Double BSc in Applied Economics",
         "institution": "Université Paris Dauphine – PSL & Goethe Universität Frankfurt",
-        "grade": "Good",
+        "grade": None,
         "city": "Paris & Frankfurt",
         "years": "2019 – 2022",
         "text": "Exchange year at Goethe Universität Frankfurt (2021–2022). Minor in Psychology.",
@@ -204,7 +204,7 @@ CONFERENCES = [
                 "role": "Presenter",
             },
         ],
-    },
+    }, 
 ]
 
 RESEARCH = [

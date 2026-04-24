@@ -12,14 +12,14 @@ Features: sidebar nav · mobile responsive · light/dark theme · email obfuscat
 
 PROFILE = {
     "name": "Meghna P. Bhaugeerutty",
-    "title": "CIFRE PhD Candidate · Quantitative Researcher",
+    "title": "PhD Candidate · Quantitative Researcher",
     "institution": "Université Paris Dauphine – PSL × Amundi",
     "email": "meghna.bhaugeerutty@dauphine.psl.eu",
     "github": "https://github.com/meghna-pb",
     "linkedin": "https://www.linkedin.com/in/meghna-bhaugeerutty/",
     "location": "Paris, France",
     "tagline": (
-        "CIFRE PhD candidate at Université Paris Dauphine – PSL and Amundi, "
+        "PhD candidate at Université Paris Dauphine – PSL and Amundi (CIFRE), "
         "researching allocation biases in Net Zero investing, physical climate risk, "
         "and quantitative portfolio management."
     ),
@@ -1097,18 +1097,18 @@ nav {{ margin-top: 4px; }}
 <main id="main">
 
   <section class="section" id="about">
-    <div class="hero-tag">CIFRE PhD &middot; Quantitative Researcher</div>
+    <div class="hero-tag">PhD Candidate &middot; Quantitative Researcher</div>
     <h1 class="hero-name">{PROFILE['name']}</h1>
     <p class="hero-tagline">{PROFILE['tagline']}</p>
     <div class="section-label">About me</div>
     <div style="border-bottom:2px solid var(--c-pale);padding-bottom:14px;margin-bottom:22px;transition:border-color 0.25s;"></div>
     {about_ps}
-    <a href="{PROFILE['cv_url']}" class="cv-btn" target="_blank">
+    <!-- <a href="{PROFILE['cv_url']}" class="cv-btn" target="_blank">
       <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
         <path d="M3 2h9v11H3V2zm2 3h5M5 8h5M5 11h3" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/>
       </svg>
       Download CV
-    </a>
+    </a>-->
   </section>
 
   <section class="section" id="education">

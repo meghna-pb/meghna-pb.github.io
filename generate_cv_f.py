@@ -143,15 +143,21 @@ PUBLICATIONS = [
         "venue": "Working paper",
         "year": "2025",
         "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5958135",
-        "abstract": (
-            "Net Zero passive strategies are designed to decarbonise portfolios by reallocating capital "
-            "away from high-emission sectors and toward greener ones. But how much of this reallocation "
-            "reflects genuine decarbonisation versus mechanical sector or country tilts? "
-            "This paper decomposes the portfolio weight changes induced by leading Net Zero indices "
-            "into a pure decarbonisation component and allocation biases driven by sectoral and "
-            "geographical concentration. We show that a significant share of the observed reallocation "
-            "is attributable to structural biases rather than carbon efficiency, with important "
-            "implications for investor mandates and index design."
+        "abstract": ("This paper examines allocation biases arising from the simultaneous integration of carbon reduction targets"
+                    " and the financing of climate solutions within passive portfolio management (Net Zero portfolios). "
+                    " Using MSCI European Monetary Union, World, Emerging Markets and All Country World indices for 2022-2024, "
+                    " we identify pronounced sectoral divergences: Financials are significantly overweighted when portfolios "
+                    " prioritise carbon intensity reduction but underweighted when green revenue share is emphasised; "
+                    " Utilities and Industrials show the opposite pattern. Pursuing both objectives concurrently produces a "
+                    " considerable positive allocation bias to real estate and raises tracking error, though not prohibitively. "
+                    " Geographically, India is underinvested in green revenues, while China receives the largest positive allocation bias. "
+                    " The United States and India are underweighted across scenarios, reflecting many large and mid-cap firms "
+                    " that are neither carbon-efficient nor major providers of green revenues despite substantial national green investment. "
+                    " Europe is consistently overweighted, reflecting more advanced decarbonisation and green investment. "
+                    " The results reveal the complex, often counter-intuitive relationship between decarbonisation and "
+                    " climate solutions and underscore that neither objective can be forgone-both should be targeted concurrently. "
+                    " Situated within a Total Portfolio Approach, the study stresses the need to integrate diverse asset classes "
+                    " to meet financial and sustainability goals and offers actionable insights for investors and policymakers. "            
         ),
     },
     {
@@ -161,14 +167,23 @@ PUBLICATIONS = [
         "venue": "Working paper",
         "year": "2026",
         "url": None,
-        "abstract": (
-            "We propose a Climate Black-Litterman framework that embeds forward-looking physical "
-            "climate risk scenarios — covering flood, heat stress, and sea-level rise — directly "
-            "into the portfolio construction process. By translating climate hazard projections "
-            "into expected return views, the model allows investors to tilt allocations toward "
-            "climate-resilient assets in a theoretically consistent manner, without discarding "
-            "prior market equilibrium information."
-        ),
+        "abstract": ("Despite the accelerating frequency of natural catastrophes and the risk of climate tipping points, "
+                      "physical climate risk remains scarcely incorporated into portfolio construction. "
+                      "This paper proposes two practical methods to reduce physical risk exposure in active portfolios "
+                      "by introducing a flexible penalty function that scales with a firm’s physical risk exposure, "
+                      "and includes a tunable attention parameter representing investor sensitivity to such risks. "
+                      "The penalty function is intentionally generalisable and can be applied to other extra‑financial "
+                      "risk metrics (for example biodiversity loss, water stress or pollution). In the first approach, "
+                      "expected risk premia are directly discounted by the penalty prior to optimisation; in the second, "
+                      "the adjusted premia are incorporated as subjective views within a Climate Black–Litterman (C‑BL) framework. "
+                      "Empirical application demonstrates that both methods significantly lower portfolio exposure to physical risk "
+                      "while mostly preserving conventional financial performance. Nonetheless, the calibration of the attention "
+                      "parameter exposes a clear trade-off relationship between financial returns and reduced exposure to physical "
+                      "risks, bearing critical implications for policymakers and practitioners. The analysis further shows that physical "
+                      "risks are unevenly distributed worldwide, reinforcing the urgency for firms and governments to act to reduce "
+                      "exposure and avoid cascading effects. Overall, this paper provides a methodological framework for integrating "
+                      "physical risk into portfolio decisions, contingent on improvements in data quality and availability, as well as regulatory guidance."       
+ ),
     },
     {
         "type": "Work in Progress",
@@ -250,7 +265,6 @@ RESEARCH = [
         ),
     },
 ]
-
 # ─────────────────────────────────────────────
 #   GENERATOR  (no need to edit below)
 # ─────────────────────────────────────────────
@@ -317,12 +331,9 @@ def education_html():
           <div class="tl-body">
             <div class="tl-header">
               <p class="tl-title">{edu['degree']}</p>
-              <div class="tl-right-meta">
-                <span class="tl-year">{edu['years']}</span>
-                {city_line}
-              </div>
+              <span class="tl-year">{edu['years']}</span>
             </div>
-            <p class="tl-org">{edu['institution']}{(' ' + grade_badge) if grade_badge else ''}</p>
+            <p class="tl-org">{edu['institution']}{(' ' + grade_badge) if grade_badge else ''} &mdash; <span class="tl-loc">{edu.get('city', '')}</span></p>
             {text_block}
             {list_block}
           </div>
@@ -829,6 +840,7 @@ nav {{ margin-top: 4px; }}
 .about-p {{
   margin: 0 0 14px; font-size: 14.5px;
   color: var(--c-text); line-height: 1.8; transition: color 0.25s;
+  text-align: justify; hyphens: auto;
 }}
 .cv-btn {{
   display: inline-flex; align-items: center; gap: 8px;
@@ -847,16 +859,7 @@ nav {{ margin-top: 4px; }}
 .tl-left {{
   flex-shrink: 0; margin-top: 4px;
 }}
-.tl-right-meta {{
-  display: flex; flex-direction: column;
-  align-items: flex-end; gap: 2px; flex-shrink: 0;
-}}
-.tl-city {{
-  font-size: 10.5px; color: var(--c-muted);
-  font-family: 'Inter', sans-serif; letter-spacing: 0.02em;
-  white-space: nowrap; text-align: right;
-  transition: color 0.25s;
-}}
+
 .tl-icon {{
   width: 38px; height: 38px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
@@ -943,6 +946,7 @@ nav {{ margin-top: 4px; }}
 .research-desc {{
   margin: 0; font-size: 13px;
   color: var(--c-detail); line-height: 1.65; transition: color 0.25s;
+  text-align: justify; hyphens: auto;
 }}
 
 /* BADGES */
@@ -1004,6 +1008,7 @@ nav {{ margin-top: 4px; }}
   border-radius: 8px; padding: 14px 16px; margin-bottom: 4px;
   font-style: italic; font-family: 'Crimson Pro', serif;
   transition: background 0.25s, border-color 0.25s, color 0.25s;
+  text-align: justify; hyphens: auto;
 }}
 
 /* CONFERENCES */
@@ -1097,7 +1102,7 @@ nav {{ margin-top: 4px; }}
 <main id="main">
 
   <section class="section" id="about">
-    <div class="hero-tag">PhD Candidate &middot; Quantitative Researcher</div>
+    <div class="hero-tag"> PhD Candidate &middot; Quantitative Researcher </div>
     <h1 class="hero-name">{PROFILE['name']}</h1>
     <p class="hero-tagline">{PROFILE['tagline']}</p>
     <div class="section-label">About me</div>
@@ -1108,7 +1113,7 @@ nav {{ margin-top: 4px; }}
         <path d="M3 2h9v11H3V2zm2 3h5M5 8h5M5 11h3" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/>
       </svg>
       Download CV
-    </a>-->
+    </a> -->
   </section>
 
   <section class="section" id="education">
